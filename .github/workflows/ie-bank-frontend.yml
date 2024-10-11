@@ -35,6 +35,7 @@ jobs:
           path: dist-dev/
 
   deploy-dev:
+    #only activate when making a push or manually
     runs-on: ubuntu-latest
     needs: build-dev
     environment:
@@ -82,7 +83,7 @@ jobs:
           path: dist-uat/
 
   deploy-uat:
-    
+    #only activate when making a pull request on main or manually
     runs-on: ubuntu-latest
     needs: build-uat
     environment:
