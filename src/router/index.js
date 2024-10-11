@@ -18,7 +18,7 @@ const routes = [
     component: AppAccounts
   },
   {
-    path: '/homepage',
+    path: '/',
     name: 'homepage',
     component: Homepage
   }
